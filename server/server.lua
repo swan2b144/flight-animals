@@ -1,5 +1,5 @@
 local animalZones = {}
-
+QBCore = exports['qb-core']:GetCoreObject()
 -- Functions
 -- Logic to spawn animals and store the data
 function spawnAnimals(source, zone, amount)
@@ -34,4 +34,8 @@ RegisterNetEvent('flight-animals:server:countThem', function(data)
     -- spawns the missing amount of animals
     animalZones = data.animalZones
     spawnAnimals(data.source, data.zone, Config.Zones[data.zone].defAmount - #animalZones[data.zone])
+end)
+
+RegisterServerEvent('cdimage-loader:Load', function()
+    TriggerClientEvent('cdimage-loader:LoadModels', source)
 end)

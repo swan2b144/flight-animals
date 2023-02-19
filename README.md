@@ -8,6 +8,9 @@
 - Update amount of animals on entering set zones
 - synced to all the players
 
+# Animals
+- ensure [animals]
+
 ## Dependencies
 
 - [PolyZone](https://github.com/mkafrin/PolyZone)

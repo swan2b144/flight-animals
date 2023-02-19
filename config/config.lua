@@ -1,6 +1,27 @@
 Config = Config or {}
-
-Config.Debug = false
+Config.Debug = true
+Config.ModelNames = {
+    'Bobcat',
+    'BrnBear',
+    'Donkey',
+    'Eagle',
+    'Falcon',
+    'Fullhorse',
+    'Hornbill',
+    'Lepoard',
+    'Lion',
+    'Macaw',
+    'Malelion',
+    'Owl',
+    'Parrot',
+    'Rangehorse',
+    'Skunk',
+    'Sparrow',
+    'Vulture',
+    'Warbler',
+    'Wolf',
+    'Younghorse'
+}
 
 Config.Zones = {
     [1] = {
@@ -18,7 +39,7 @@ Config.Zones = {
             [1] = {
                 coords = vector4(-2239.015, 2300.096, 32.326, 113.366),
                 possibleAnimals = {"A_C_Boar", "A_C_Cat_01", "A_C_Chickenhawk"},
-            }, 
+            },
             [2] = {
                 coords = vector4(-2239.015, 2300.096, 32.326, 113.366),
                 possibleAnimals = {"A_C_Chimp", "A_C_Chop", "A_C_Cormorant"},
