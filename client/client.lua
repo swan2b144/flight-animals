@@ -3,7 +3,7 @@ function Init()
     -- Initialize each zone
     for k, v in pairs(Config.Zones) do
         exports["ps-zones"]:CreatePolyZone("animal_zone_"..k, v.zone.coords,
-            {debugPoly = Config.Debug, minZ = v.zone.height.min, maxZ = v.zone.height.max})
+        {debugPoly = Config.Debug, minZ = v.zone.height.min, maxZ = v.zone.height.max})
     end
 end
 
@@ -17,6 +17,8 @@ RegisterNetEvent('flight-animals:client:spawnAnimals', function(netIds, Location
         TaskWanderStandard(APed, 10, 10)
         SetCanAttackFriendly(APed, false, true)
         SetEntityAsMissionEntity(APed, true, true)
+        SetPedRelationshipGroupHash(APed, GetHashKey("WILD_ANIMAL"))
+        SetPedRelationshipGroupDefaultHash(APed, GetHashKey("WILD_ANIMAL"))
     end
 end)
 

@@ -1,5 +1,4 @@
 local animalZones = {}
-QBCore = exports['qb-core']:GetCoreObject()
 -- Functions
 -- Logic to spawn animals and store the data
 function spawnAnimals(source, zone, amount)

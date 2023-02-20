@@ -38,11 +38,11 @@ Config.Zones = {
         spawnPoints = {
             [1] = {
                 coords = vector4(-2239.015, 2300.096, 32.326, 113.366),
-                possibleAnimals = {"A_C_Boar", "A_C_Cat_01", "A_C_Chickenhawk"},
+                possibleAnimals = {"BrnBear", "Bobcat", "Lion"},
             },
             [2] = {
                 coords = vector4(-2239.015, 2300.096, 32.326, 113.366),
-                possibleAnimals = {"A_C_Chimp", "A_C_Chop", "A_C_Cormorant"},
+                possibleAnimals = {"Malelion", "Eagle", "Falcon"},
             },
         }
     },
