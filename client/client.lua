@@ -2,11 +2,8 @@
 function Init()
     -- Initialize each zone
     for k, v in pairs(Config.Zones) do
-        exports['PolyZone']:AddPolyZone("animal_zone_"..k, v.zone.coords,{
-            debugPoly = Config.Debug,
-            minZ = v.zone.height.min,
-            maxZ = v.zone.height.max
-        })
+        exports["ps-zones"]:CreatePolyZone("animal_zone_"..k, v.zone.coords,
+            {debugPoly = Config.Debug, minZ = v.zone.height.min, maxZ = v.zone.height.max})
     end
 end
 
